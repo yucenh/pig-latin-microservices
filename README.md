@@ -10,7 +10,8 @@ The Pig Latin rules:
 1. For words that begin with consonant sounds, all letters before the initial vowel are placed at the end of the word sequence. Then, "ay" is added. 
 2. For words that begin with vowel sounds or a silent letter, one just adds "yay" to the end.
 
-Silent words include ("ps", "kn", "wh", "gn", "pn") which refer to: http://www.academia.edu/5595383/MAKE_YOUR_ENGLISH_SOUNDS_ENGLISH_SILENT_CONSONANT. 
+Assupmtion made: to infer silent words in the rule, popular silent prefixs ("ps", "kn", "wh", "gn", "pn") are selected.
+Refer to: http://www.academia.edu/5595383/MAKE_YOUR_ENGLISH_SOUNDS_ENGLISH_SILENT_CONSONANT
 
 Requirements
 ===========
