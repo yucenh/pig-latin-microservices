@@ -12,12 +12,22 @@ app = Flask(__name__)
 def isvowel(c):
     return c in "aeiouAEIOU"
 
+
+def isSlientPrefix(string):
+    slientList = ["ps", "kn", "wh", "gn", "pn"]
+    for slient in slientList:
+        if string.startswith(slient):
+            return True
+
+    return False
     
+
 def getPrefix(string):
     for i in range(0, len(string)):
         if isvowel(string[i]):
             return i
     return -1
+
 
 
 def convert_sentence(sentence):
@@ -45,8 +55,9 @@ def convert_sentence(sentence):
             s[0] = s[0].upper()
             newWord = "".join(s)
 
-        if len(appendStr) == 0: 
-            newWord = newWord + "yay"
+        if len(appendStr) == 0 or isSlientPrefix(word): 
+            # print word, (word if not isLastCharPunctuation else word[:-1])
+            newWord = (word if not isLastCharPunctuation else word[:-1]) + "yay"
         else:
             newWord = newWord + appendStr + "ay"
 

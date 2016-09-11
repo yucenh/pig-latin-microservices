@@ -21,9 +21,9 @@ class TestPigLatinService(unittest.TestCase):
             actual_reply = reply.json()["result"]
 
             self.assertEqual(expected, actual_reply,
-                "Got {} but expected {}".format(actual_reply, expected))
+                "Got '{}' but expected '{}'".format(actual_reply, expected))
 
-    
+
 TEST_CASES = {
     "pig": "igpay",
     "banana": "ananabay",
@@ -36,10 +36,11 @@ TEST_CASES = {
     "are": "areyay",
 }
 
+
 TEST_PARAGRAPH_CASES = {
     "Where is the toilet?": "Erewhay isyay ethay oilettay?",
     "Hello world!": "Ellohay orldway!",
-    "The purpose of this challenge is to demonstrate how you architect, implement test and organize your software projects- as such there will be less of an emphasis on algorithms and more on the project as a whole.": "Ethay urposepay ofyay isthay allengechay isyay otay emonstrateday owhay ouyay architectyay, implementyay, esttay andyay organizeyay ouryay oftwaresay ojectspray- asyay uchsay erethay illway ebay esslay ofyay anyay emphasisyay onyay algorithmsyay andyay oremay onyay ethay ojectpray asyay ayay olewhay."
+    "The purpose of this challenge is to demonstrate how you architect, implement test and organize your software projects- as such there will be less of an emphasis on algorithms and more on the project as a whole.": "Ethay urposepay ofyay isthay allengechay isyay otay emonstrateday owhay ouyay architectyay, implementyay esttay andyay organizeyay ouryay oftwaresay ojectspray- asyay uchsay erethay illway ebay esslay ofyay anyay emphasisyay onyay algorithmsyay andyay oremay onyay ethay ojectpray asyay ayay wholeyay."
 }
 
 
